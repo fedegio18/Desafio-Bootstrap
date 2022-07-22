@@ -1,0 +1,1607 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,400;1,900&family=Roboto+Slab:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* PAGINA PRINCIPAL */
+.indexPrincipal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header "
+    "tituloIndex tituloIndex tituloIndex "
+    "mainIndex mainIndex mainIndex "
+    "mainIndex mainIndex mainIndex "
+    "footer footer footer ";
+
+}
+
+
+body{
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    /* position: relative; */
+    /* padding-bottom: 150px; */
+    min-height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 6.5rem;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraNav{
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
+}
+.tituloPrincipal{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tituloPrincipalDiseño {
+    color: #ffffff;
+    font-size: 1em;
+    margin-left: 2rem;
+    
+}
+
+.tituloPrincipalDiseño:hover {
+    
+}
+
+li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: none;
+    color: rgb(255, 255, 255);
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.fotoLogo{
+    width: 20%;
+
+}
+
+.tituloIndex {
+    grid-area: tituloIndex;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+.mainIndex{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #ffffff;
+    
+}
+
+/* PAGINA PRINCIPAL - JARDINERIA */
+
+.mainJardineria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.2rem;
+    width: 60%;
+}
+
+.mainJardineriaQ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.2rem;
+    width: 60%;
+}
+
+.tituloJardineria{
+    text-align: center;
+    font-size: 30px;
+}
+
+.descripcionJardineria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+
+.logoJardineria{
+    width: 15%;
+}
+
+.logoHuerta{
+    width: 15%;
+}
+
+.logoArq{
+    width: 8%;
+}
+
+/* HUERTA */
+
+.jardin{
+    width: 25rem;
+    height: 15.5rem;
+    border-style: solid;
+    border-radius: 3rem;
+
+}
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+.muestra6 {
+    grid-area: mainIndex;
+}
+
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    text-align: center;
+    width: 60%;
+    gap: 1rem;
+
+}
+
+h4{
+    font-size: 2em;
+}
+
+/* PAGINA PRINCIPAL - FOOTER */
+
+.footerFlex{
+    position: relative;
+    grid-area: footer;
+    background-color: #000000;
+    bottom: 0;
+    /* width: 100%; */
+    height: 6.25rem;
+    border-style: solid;
+    border-radius: 6.25rem;
+    margin-top: 12.5rem;
+    
+}
+
+.footerRedes{
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footerRedesR{
+    text-decoration: none;
+}
+.footerTel{
+    /* position: absolute; */
+    color: #ffffff;
+    text-align: end;
+}
+
+.divDerechos{
+    color: #ffffff;
+    text-align: center;
+}
+/* .footerTel{
+    text-align: left;
+} */
+
+.imagenWpp{
+    height: 2rem;
+    width: auto;
+}
+
+.fotosRedes{
+    width: 2%;
+    
+}
+
+/*///////////////////// Movile ///////////////////////*/
+@media screen and (max-width: 480px){
+    body{
+        background-color: #ffffff;
+        /* margin-left: 5%; */
+    }
+    .header{
+        display: flex;
+        height: 12.5rem;
+    }
+    .barraNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .tituloPrincipal{
+        height: 50%;
+    }
+    .tituloPrincipalDiseño {
+        color: #ffffff;
+        font-size: 1rem;
+        margin-left: 30px;
+        height: 50%;
+    }
+    .fotoLogo{
+        width:  3rem;
+        height: 3rem;
+    }
+    .indexPrincipal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainJardineria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainJardineriaQ{
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .descripcionJardineria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+
+    .jardin{
+        height: 9rem;
+        width: 12.5rem;
+    }
+
+    .navLinks li a{
+        font-size:100% ;
+    } 
+
+    .fotosRedes{
+        width: 8%;
+        
+    }
+    
+
+}
+
+@media screen and (min-width: 480px){
+    body{
+        background-color: #ffffff;
+        /* margin-left: 5%; */
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .barraNav{
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloPrincipal{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        height: 30%;
+        
+    }
+    .tituloPrincipalDiseño {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-left: 2rem;
+        height: 25%;
+    }
+
+    .fotoLogo{
+        width:  3rem;
+        height: 3rem;
+    }
+    .indexPrincipal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainJardineria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainJardineriaQ{
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .descripcionJardineria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+
+    .fotosRedes{
+        width: 3%;
+    }
+        
+}
+
+@media screen and (min-width: 1024px){
+
+    .indexPrincipal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "header header header "
+        "tituloIndex tituloIndex tituloIndex "
+        "mainIndex mainIndex mainIndex "
+        "mainIndex mainIndex mainIndex "
+        "footer footer footer ";
+    
+    }
+    
+    body{
+        background-color: #ffffff;
+        font-family: 'Nunito', sans-serif;
+        /* position: relative; */
+        /* padding-bottom: 150px; */
+        min-height: 100vh;
+        margin-left:0%;
+    }
+    
+    .header{
+        grid-area: header;
+        background-color: #0A090C;
+        background-repeat: no-repeat;
+        border-radius: 6.25rem;
+        border-style: solid;
+        border-color: black;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .barraNav{
+        height: 7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem;
+        align-items: center;
+        width: 100%;
+    }
+    .tituloPrincipal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 8rem;
+    }
+    
+    .tituloPrincipalDiseño {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-top: 1rem;
+        /* margin-left: 30px; */
+        height: 80%;
+        width: 80%;
+    }
+    
+
+    li a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-style: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    .navLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+    }
+    .fotoLogo{
+        width: 6rem;
+        height: 6rem;
+        /* border-style: solid; */
+        /* border-radius: 200px; */
+    }
+    
+    .tituloIndex {
+        grid-area: tituloIndex;
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 20px;
+    }
+    
+    .mainIndex{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 3rem;
+
+        background-color: #ffffff;
+        
+    }
+    
+    /* JARDINERIA */
+    
+    .mainJardineria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5rem;
+        width: 60%;
+    }
+    
+    .mainJardineriaQ{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.5rem;
+        width: 60%;
+    }
+    
+    .tituloJardineria{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .descripcionJardineria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+ 
+.logoJardineria{
+    width: 15%;
+}
+
+.logoHuerta{
+    width: 15%;
+}
+
+.logoArq{
+    width: 8%;
+}
+/* HUERTA */
+
+.jardin{
+    width: 25rem;
+    height: 250px;
+    border-style: solid;
+    border-radius: 3rem;
+
+}
+
+.mainIndex {
+    grid-area: mainIndex;
+}
+
+
+.quienesSomos{
+    margin-top: 5.5rem;
+    text-align: center;
+    width: 60%;
+
+}
+
+h4{
+    font-size: 2rem;
+}
+
+/* -------------------FOOTER-------------------------------- */
+
+.footerFlex{
+    position: relative;
+    grid-area: footer;
+    background-color: #000000;
+    bottom: 0;
+    /* width: 100%; */
+    height: 6.25rem;
+    border-style: solid;
+    border-radius: 6.25rem;
+    margin-top: 12rem;
+    
+}
+
+.footerRedes{
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footerRedesR{
+    text-decoration: none;
+}
+.footerTel{
+    /* position: absolute; */
+    color: #ffffff;
+    text-align: end;
+}
+
+.divDerechos{
+    color: #ffffff;
+    text-align: center;
+}
+/* .footerTel{
+    text-align: left;
+} */
+
+.imagenWpp{
+    height: 2rem;
+    width: auto;
+}
+
+.fotosRedes{
+    width: 2%;
+    
+}
+
+}
+
+/* ----------PAGINA CONTACTO------------ */
+
+.indexPrincipalC{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "headerC headerC "
+    "tituloC tituloC  "
+    "formulario formulario  "
+    "formulario formulario  "
+    "footer footer  ";
+    min-height: 100vh;
+
+}
+
+.headerC{
+    grid-area: header;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 6.25rem;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerC{
+    grid-area: headerC;
+}
+
+.tituloC{
+    grid-area: tituloC;
+    text-align: center;
+    height: 6.25rem;
+    margin-top: 3rem;
+}
+.formularioMain{
+    grid-area: formulario ;
+}
+
+.divFM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    }
+
+.formularioMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.ulFM{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.ulFM li{
+    list-style: none;
+    text-align:start;
+}
+
+.divFM2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* margin-top: 50px; */
+    gap: 0.5rem;
+}
+
+
+.inputFM2{
+    width: 45%;
+}
+
+.logoFlor{
+    width: 2%;
+}
+
+.boton{
+    width: 20%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* MOVIL CONTACTO */
+@media screen and (max-width: 480px){
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerC{
+    display: flex;
+    justify-content: center;
+    height: 12.5rem;
+}
+.barraNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.indexPrincipalC{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioMain{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ulFM li{
+    text-align: center;
+}
+.divFM{
+    text-align: center;
+    width: 80%;
+}
+
+.divFM2{
+    display: flex;
+    width: 80%;
+}
+.textArea{
+    width: 80%;
+}
+
+}
+
+/* TABLET CONTACTO */
+@media screen and (min-width: 480px){
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .headerC{
+        display: flex;
+        justify-content: center;
+        height: 12.5rem;
+    }
+    .barraNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .indexPrincipalC{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formularioMain{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ulFM li{
+        text-align: center;
+    }
+    .divFM{
+        text-align: center;
+        width: 80%;
+    }
+
+    .divFM2{
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .indexPrincipalC{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "headerC headerC "
+        "tituloC tituloC  "
+        "formulario formulario  "
+        "formulario formulario  "
+        "footer footer  ";
+        min-height: 100vh;
+    
+    }
+    
+    .headerC{
+        grid-area: header;
+        background-color: #0A090C;
+        background-repeat: no-repeat;
+        border-radius: 6.25rem;
+        border-style: solid;
+        border-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headerC{
+        grid-area: headerC;
+    }
+    
+    .tituloC{
+        grid-area: tituloC;
+        text-align: center;
+        height: 6.25rem;
+        margin-top: 3rem;
+    }
+    .formularioMain{
+        grid-area: formulario ;
+    }
+    
+    .divFM{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        }
+    
+    .formularioMain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    .ulFM{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: end;
+        align-items: center;
+    }
+    
+    .ulFM li{
+        list-style: none;
+        text-align:start;
+    }
+    
+    .divFM2{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        /* margin-top: 50px; */
+        gap: 0.5rem;
+    }
+    
+    
+    .inputFM2{
+        width: 45%;
+    }
+    
+    .logoFlor{
+        width: 2%;
+    }
+    
+    .boton{
+        width: 20%;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+}
+
+
+/* GALERIA PROYECTOS */
+.indexPrincipalG{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "headerG headerG headerG"
+    "tituloG tituloG tituloG"
+    "galeria1 galeria1 galeria1"
+    "galeria2 galeria2 galeria2"
+    "galeria3 galeria3 galeria3"
+    "galeria4 galeria4 galeria4"
+    "footer footer footer";
+    min-height: 100vh;
+
+}
+
+.jardinGaleria{
+    grid-area: galeria1;
+}
+.jardinGaleria1{
+    grid-area: galeria1;
+}
+
+.huertaGaleria{
+    grid-area: galeria2;
+}
+
+.riegoGaleria{
+    grid-area: galeria3;
+}
+
+.arquitecturaGaleria{
+    grid-area: galeria4;
+}
+
+.tituloG{
+    grid-area: tituloG;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footerFlex{
+    grid-area: footer;
+}
+
+.mainGaleria{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headerG{
+    grid-area: headerG;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 6.25rem;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jardinGaleriaI{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.divFlechaG{
+    display: flex;
+    justify-content: center;
+}
+.flechaG{
+    width: 5%;
+    text-align: center;
+}
+
+/* GALERIA JARDIN    */
+
+.divJG1{
+    background-image: url(./imagenes/Jardin\ 1.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divJG2{
+    background-image: url(./imagenes/jardinG5.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divJG3{
+    background-image: url(./imagenes/jardinG2.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+.divJG4{
+    background-image: url(./imagenes/jardinG3.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+
+.jardinGaleriaT{
+    margin-top: 3em;
+    height: 5em;
+    font-size: 2em;
+}
+.jardinGaleria div h3{
+    text-align: center;
+    /* height: 10em; */
+}
+
+.logoJardineriaG{
+    width: 3%;
+}
+
+
+
+/* Huerta */
+
+.huertaGaleriaI{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.divHG1{
+    background-image: url(./imagenes/huertaG1.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divHG2{
+    background-image: url(./imagenes/huertaG2.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divHG3{
+    background-image: url(./imagenes/huertaG3.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divHG4{
+    background-image: url(./imagenes/huertaG4.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+
+.huertaGaleriaT{
+    margin-top: 3em;
+    height: 5em;
+    font-size: 2em;
+}
+.huertaGaleria div h3{
+    text-align: center;
+    /* height: 10em; */
+}
+
+.logoHuertaG{
+    width: 3%;
+}
+
+
+/*      RIEGO                  */
+.riegoGaleriaI{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    
+}
+
+.divRG1{
+    background-image: url(./imagenes/riegoG1.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divRG2{
+    background-image: url(./imagenes/riegoG2.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divRG3{
+    background-image: url(./imagenes/riegoG3.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divRG4{
+    background-image: url(./imagenes/riegoG4.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.riegoGaleriaT{
+    margin-top: 3rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.riegoGaleria div h3{
+    text-align: center;
+    /* height: 10em; */
+}
+
+
+/*                ARQUITECTURA                        */
+.arquitecturaGaleriaT{
+    margin-top: 3em;
+    height: 5em;
+    font-size: 2rem;
+}
+.arquitecturaGaleria div h3{
+    text-align: center;
+    /* height: 10em; */
+}
+
+.arquitecturaGaleriaI{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+
+.divAG1{
+    background-image: url(./imagenes/arqG1.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divAG2{
+    background-image: url(./imagenes/arqG2.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divAG3{
+    background-image: url(./imagenes/arqG3.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.divAG4{
+    background-image: url(./imagenes/arqG4.jpg);
+    background-size: cover  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:18.75rem ;
+    height:15.65rem ;
+    border-style: solid;
+    border-radius: 3rem;
+}
+
+.logoArqG{
+    width: 3%;
+}
+
+.logoRiegoG{
+    width: 3%;
+}
+
+/* GALERIA MOVILE */
+
+@media screen and (max-width: 480px){
+
+
+
+    .indexPrincipalG{
+        display: flex;
+        flex-direction: column;
+
+}
+
+}
+
+
+/*PAGINA CURSOS */
+
+
+.indexPrincipalS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "headerS headerS headerS "
+    "tituloS tituloS tituloS "
+    "mainS mainS mainS "
+    "mainS mainS mainS "
+    "footer footer footer ";
+
+}
+
+.headerS{
+    grid-area: headerS;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloCursos{
+    grid-area: tituloS;
+    text-align: center;
+    margin-bottom: 10em;
+}
+
+.cursosDiv{
+    grid-area: mainS;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cursos{
+    grid-area: mainS;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10em;
+}
+
+.CursosJ{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 80%;
+
+}
+
+
+
+.cursosJI{
+    background-image: url(./imagenes/cursos2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    height: 10rem;
+    border-radius: 3rem;
+    border-style: solid;
+}
+
+.cursosJI h3{
+    color: #ffffff;
+    text-align: center;
+}
+
+.cursosHI h3{
+    color: #ffffff;
+    text-align: center;
+}
+
+.objetivosCJ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cursosH{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 80%;
+
+}
+
+.objetivosCH{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.cursosHI{
+    background-image: url(./imagenes/cursos2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    height: 10rem;
+    border-radius: 3rem;
+    border-style: solid;
+}
+
+/*   PAGINA CONOCENOS  - QUIENES SOMOS               */
+
+.indexPrincipalCC {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "headerCC headerCC headerCC "
+    "tituloCC tituloCC tituloCC "
+    "mainCC mainCC mainCC "
+    "mainCC mainCC mainCC "
+    "footer footer footer ";
+
+}
+
+.headerCC{
+    grid-area: headerCC;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 6.25rem;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainCC{
+    grid-area: mainCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.divConocenos1{
+    grid-area: tituloCC;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.perfilesCC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.quienesSomos1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.quienesSomos{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.iconoP{
+    height: 10rem;
+    width: 10rem;
+}
+
+.inCC{
+    height:4em;
+    width:4em;
+}
+
+.h3confiaron{
+    text-align: center;
+}
+
+.divConfiaron{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.confiaron{
+    height: 10rem;
+    width: 10rem;
+}
+
+.pruebaCC1{
+    display: flex;
+    justify-content: center;
+}
+
+.pruebaCC{
+    background-image: url(./imagenes/prueba5.jpg);
+    width: 80%;
+    height: 6.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-radius: 10rem;
+}
+
+/* CONOCENOS */
+
+@media screen and (max-width: 480px){
+
+    .indexPrincipalCC{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+
+    }
+    .headerCC{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .perfilesCC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainCC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quienesSomos{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .perfilCC1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+
+    .divConfiaron{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .iconoP{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .inCC{
+        width: 2rem;
+        height: 2rem;
+
+    }
+}
+
+
+/* CURSOS MOVILE */
+
+@media screen and (max-width: 480px){
+    .indexPrincipalS{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .CursosJ{
+        display: flex;
+        flex-direction: column;
+    }
+    .cursosH{
+        display: flex;
+        flex-direction: column;
+    }
+}
