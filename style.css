@@ -1605,3 +1605,9 @@ h4{
         flex-direction: column;
     }
 }
+
+.navLinks li a:hover{
+    color: red;
+    font-size: 25px;
+
+}
