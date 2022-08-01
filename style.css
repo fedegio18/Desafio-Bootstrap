@@ -76,7 +76,7 @@ body{
 }
 
 .tituloPrincipalDiseño {
-    color: #ff0000;
+    color: #ffffff;
     font-size: 1em;
     text-align: center;
     /* margin-left: 2rem; */
@@ -213,7 +213,6 @@ li a{
     grid-area: mainIndex;
 }
 
-
 .quienesSomos{
     display: flex;
     flex-direction: column;
@@ -221,7 +220,6 @@ li a{
     text-align: center;
     width: 60%;
     gap: 1rem;
-
 }
 
 h4{
@@ -239,10 +237,8 @@ h4{
     /* height: 200rem; */
     border-style: solid;
     border-radius: 6.25rem;
-    margin-top: 12.5rem;
-    
+    margin-top: 12.5rem;  
 }
-
 .footerRedes{
     color: #ffff;
     text-align: center;
@@ -373,6 +369,142 @@ h4{
         border-radius: 10rem;
     }
 
+    /* Contacto */
+    .headerC{
+        display: flex;
+        justify-content: center;
+        /* height: 12.5rem; */
+    }
+    .barraNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+    
+    .indexPrincipalC{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formularioMain{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .ulFM li{
+        text-align: center;
+    }
+    .divFM{
+        text-align: center;
+        width: 80%;
+    }
+    
+    .divFM2{
+        display: flex;
+        width: 80%;
+    }
+    .textArea{
+        width: 80%;
+    }
+    .indexPrincipalG{
+        display: flex;
+        flex-direction: column;
+    }
+     /* CONOCENOS */
+     .indexPrincipalCC{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+
+    }
+    .headerCC{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .perfilesCC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainCC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quienesSomos{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .perfilCC1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+    .perfilCC4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+        ;
+    }
+
+    .divConfiaron{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .iconoP{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .inCC{
+        width: 2rem;
+        height: 2rem;
+
+    }
+      /* CURSOS MOVILE */
+      .indexPrincipalS{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .CursosJ{
+        display: flex;
+        flex-direction: column;
+    }
+    .cursosH{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 480px){
@@ -467,7 +599,57 @@ h4{
         width: 100%;
     }
 
+    /* Contacto */
+    .headerC{
+        display: flex;
+        justify-content: center;
+        /* height: 12.5rem; */
+    }
+    .barraNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
 
+    .indexPrincipalC{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formularioMain{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ulFM li{
+        text-align: center;
+    }
+    .divFM{
+        text-align: center;
+        width: 80%;
+    }
+
+    .divFM2{
+        display: flex;
+        width: 80%;
+    }
+    .indexPrincipalCC{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .divConfiaron{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .perfilesCC{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -542,7 +724,7 @@ h4{
     }
     
     .tituloPrincipalDiseño {
-        color: #ff0000;
+        color: #ffffff;
         font-size: 3em;
         text-align: center;
         /* margin-left: 2rem; */
@@ -718,8 +900,108 @@ h4{
     background-color: #000000;
     width: 100%;
 }
+/* CONTACTO */
+
+.indexPrincipalC{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "headerC headerC "
+    "tituloC tituloC  "
+    "formulario formulario  "
+    "formulario formulario  "
+    "footer footer  ";
+    min-height: 100vh;
+
+}
+
+.headerC{
+    grid-area: headerC;
+    background-color: #0A090C;
+    background-repeat: no-repeat;
+    border-radius: 6.25rem;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerC{
+    grid-area: headerC;
+}
+
+.tituloC{
+    grid-area: tituloC;
+    text-align: center;
+    height: 6.25rem;
+    margin-top: 3rem;
+}
+.formularioMain{
+    grid-area: formulario ;
+}
+
+.divFM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    }
+
+.formularioMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.ulFM{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.ulFM li{
+    list-style: none;
+    text-align:start;
+}
+
+.divFM2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* margin-top: 50px; */
+    gap: 0.5rem;
+}
 
 
+.inputFM2{
+    width: 45%;
+}
+
+.logoFlor{
+    width: 2%;
+}
+
+.boton{
+    width: 20%;
+    background-color: #000000;
+    color: #ffffff;
+}
+.divConfiaron{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
 }
 
 /* ----------PAGINA CONTACTO------------ */
@@ -786,7 +1068,6 @@ h4{
 }
 
 .ulFM{
-    
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -807,7 +1088,6 @@ h4{
     gap: 0.5rem;
 }
 
-
 .inputFM2{
     width: 45%;
 }
@@ -822,198 +1102,6 @@ h4{
     color: #ffffff;
 }
 
-
-/* MOVIL CONTACTO */
-@media screen and (max-width: 480px){
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.headerC{
-    display: flex;
-    justify-content: center;
-    /* height: 12.5rem; */
-}
-.barraNav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3rem;
-}
-
-.indexPrincipalC{
-    display: flex;
-    flex-direction: column;
-}
-
-.formularioMain{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.ulFM li{
-    text-align: center;
-}
-.divFM{
-    text-align: center;
-    width: 80%;
-}
-
-.divFM2{
-    display: flex;
-    width: 80%;
-}
-.textArea{
-    width: 80%;
-}
-
-}
-
-/* TABLET CONTACTO */
-@media screen and (min-width: 480px){
-    * {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .headerC{
-        display: flex;
-        justify-content: center;
-        /* height: 12.5rem; */
-    }
-    .barraNav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 3rem;
-    }
-
-    .indexPrincipalC{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .formularioMain{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .ulFM li{
-        text-align: center;
-    }
-    .divFM{
-        text-align: center;
-        width: 80%;
-    }
-
-    .divFM2{
-        display: flex;
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .indexPrincipalC{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "headerC headerC "
-        "tituloC tituloC  "
-        "formulario formulario  "
-        "formulario formulario  "
-        "footer footer  ";
-        min-height: 100vh;
-    
-    }
-    
-    .headerC{
-        grid-area: headerC;
-        background-color: #0A090C;
-        background-repeat: no-repeat;
-        border-radius: 6.25rem;
-        border-style: solid;
-        border-color: black;
-        display: flex;
-        flex-direction: row;
-        /* justify-content: center; */
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .headerC{
-        grid-area: headerC;
-    }
-    
-    .tituloC{
-        grid-area: tituloC;
-        text-align: center;
-        height: 6.25rem;
-        margin-top: 3rem;
-    }
-    .formularioMain{
-        grid-area: formulario ;
-    }
-    
-    .divFM{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        }
-    
-    .formularioMain{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        
-    }
-    
-    .ulFM{
-        
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: end;
-        align-items: center;
-    }
-    
-    .ulFM li{
-        list-style: none;
-        text-align:start;
-    }
-    
-    .divFM2{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        /* margin-top: 50px; */
-        gap: 0.5rem;
-    }
-    
-    
-    .inputFM2{
-        width: 45%;
-    }
-    
-    .logoFlor{
-        width: 2%;
-    }
-    
-    .boton{
-        width: 20%;
-        background-color: #000000;
-        color: #ffffff;
-    }
-    
-}
-
-
 /* GALERIA PROYECTOS */
 .indexPrincipalG{
     display: grid;
@@ -1027,7 +1115,6 @@ h4{
     "galeria4 galeria4 galeria4"
     "footer footer footer";
     min-height: 100vh;
-
 }
 
 .jardinGaleria{
@@ -1139,7 +1226,6 @@ h4{
     border-radius: 3rem;
 }
 
-
 .jardinGaleriaT{
     margin-top: 3em;
     height: 5em;
@@ -1153,11 +1239,7 @@ h4{
 .logoJardineriaG{
     width: 3%;
 }
-
-
-
 /* Huerta */
-
 .huertaGaleriaI{
     display: flex;
     flex-direction: row;
@@ -1209,7 +1291,6 @@ h4{
     border-radius: 3rem;
 }
 
-
 .huertaGaleriaT{
     margin-top: 3em;
     height: 5em;
@@ -1224,14 +1305,12 @@ h4{
     width: 3%;
 }
 
-
 /*      RIEGO                  */
 .riegoGaleriaI{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1em;
-    
 }
 
 .divRG1{
@@ -1289,7 +1368,6 @@ h4{
     /* height: 10em; */
 }
 
-
 /*                ARQUITECTURA                        */
 .arquitecturaGaleriaT{
     margin-top: 3em;
@@ -1300,7 +1378,6 @@ h4{
     text-align: center;
     /* height: 10em; */
 }
-
 .arquitecturaGaleriaI{
     display: flex;
     flex-direction: row;
@@ -1308,8 +1385,6 @@ h4{
     gap: 1em;
 
 }
-
-
 .divAG1{
     background-image: url(./imagenes/arqG1.jpg);
     background-size: cover  ;
@@ -1353,33 +1428,14 @@ h4{
     border-style: solid;
     border-radius: 3rem;
 }
-
 .logoArqG{
     width: 3%;
 }
-
 .logoRiegoG{
     width: 3%;
 }
 
-/* GALERIA MOVILE */
-
-@media screen and (max-width: 480px){
-
-
-
-    .indexPrincipalG{
-        display: flex;
-        flex-direction: column;
-
-}
-
-}
-
-
 /*PAGINA CURSOS */
-
-
 .indexPrincipalS {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1437,8 +1493,6 @@ h4{
 
 }
 
-
-
 .cursosJI{
     background-image: url(./imagenes/cursos2.jpg);
     background-position: center;
@@ -1478,7 +1532,6 @@ h4{
     justify-content: space-between;
     gap: 1.5rem;
     width: 80%;
-
 }
 
 .objetivosCH{   
@@ -1486,7 +1539,6 @@ h4{
     flex-direction: column;
     align-items: center;
     width: 100%;
-
 }
 .cursosHI{
     background-image: url(./imagenes/cursos2.jpg);
@@ -1501,7 +1553,6 @@ h4{
     border-radius: 3rem;
     border-style: solid;
 }
-
 /*   PAGINA CONOCENOS  - QUIENES SOMOS               */
 
 .indexPrincipalCC {
@@ -1513,9 +1564,7 @@ h4{
     "mainCC mainCC mainCC "
     "mainCC mainCC mainCC "
     "footer footer footer ";
-
 }
-
 .headerCC{
     grid-area: headerCC;
     background-color: #0A090C;
@@ -1606,110 +1655,6 @@ h4{
     border-style: solid;
     border-radius: 10rem;
 }
-
-/* CONOCENOS */
-
-@media screen and (max-width: 480px){
-
-    .indexPrincipalCC{
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-
-    }
-    .headerCC{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .perfilesCC{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mainCC{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .quienesSomos{
-        display: flex;
-        justify-content: center;
-        width: 80%;
-    }
-    .perfilCC1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em
-        ;
-    }
-    .perfilCC2{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em
-        ;
-    }
-    .perfilCC3{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em
-        ;
-    }
-    .perfilCC4{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em
-        ;
-    }
-
-    .divConfiaron{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .iconoP{
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .inCC{
-        width: 2rem;
-        height: 2rem;
-
-    }
-}
-
-
-/* CURSOS MOVILE */
-
-@media screen and (max-width: 480px){
-    .indexPrincipalS{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .CursosJ{
-        display: flex;
-        flex-direction: column;
-    }
-    .cursosH{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .navbar-nav a{
     transition: 0.5s;
 }
@@ -1722,33 +1667,8 @@ h4{
 
 }
 
-@media screen and (min-width: 480px){
-
-.indexPrincipalCC{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.divConfiaron{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.perfilesCC{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-}
-
 @media screen and (min-width: 1024px){
 
-.divConfiaron{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1em;
-}
+
 }
 
